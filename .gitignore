@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments (any tool subfolder)
+.venv/
+venv/
+env/
+ENV/
+
+# OS cruft
+.DS_Store
+
+# Secrets / environment files (never commit API keys)
+.env
+.env.*
+!.env.example
+
+# Downloaded video formats (should never be committed by any tool here)
+*.mp4
+*.mkv
+*.webm
+*.mov
+
+# instagram-downloader specific runtime artifacts
+instagram-downloader/downloads/*
+!instagram-downloader/downloads/.gitkeep
+instagram-downloader/.download_archive.txt
+instagram-downloader/failed_urls.txt
+instagram-downloader/reels.txt
+instagram-downloader/cookies.txt
